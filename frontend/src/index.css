@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system;
-  
+  background-color: whitesmoke;
   /* BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
@@ -16,20 +16,109 @@ code {
 }
 
 header{
-  background-color: #CCD8F5;
+  background-color: white;
+  /* max-width: 1400px; */
 }
 
 header .container{
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
-  /* padding: 10px 20px; */
+  padding: 0px 25px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .pages{
-  max-width: 1400px;
-  padding: 20px; 
+  /* max-width: 1400px; */
+  /* padding: 20px;  */
   margin: 0 auto;
+  
+}
+
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* gap: 100px; */
+}
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout-details h2{
+  color: #7198F4;
+  margin: 0 0 8px 0 ;
+  font-weight: bolder;
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 2px solid #AEC5F9;
+  border-radius: 5px; 
+  background-color: #AEC5F9;
+  font-weight: bold;
+  font-size: 14px; 
+  color: white;
+  margin: 3px;
+}
+.workout-details span:hover{
+  color: #AEC5F9;
+  background-color: white; 
+}
+
+
+
+/* new workout form */
+/* label, input {
+  display: block;
+} */
+input {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* width: 100%; */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 2px solid #7198F4;
+  color: #7198F4;
+  font-weight: bold;
+  padding: 6px 8px;
+  margin-top: 10px;
+  font-family: "Poppins";
+  border-radius: 7px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #7198F4; 
+  color: white;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+form{
+  margin: 25px 15%;
 }
