@@ -63,15 +63,15 @@ header .container{
 }
 .workout-details span {
   position: absolute;
-  top: 20px;
+  top: 18px;
   right: 20px;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px;
   border: 2px solid #AEC5F9;
-  border-radius: 5px; 
+  border-radius: 15px; 
   background-color: #AEC5F9;
   font-weight: bold;
-  font-size: 14px; 
+  font-size: 16px; 
   color: white;
   margin: 3px;
 }
@@ -111,12 +111,16 @@ form button:hover {
   color: white;
 }
 div.error {
-  padding: 10px;
+  padding: 6px 10px;
   background: #ffefef;
-  border: 1px solid var(--error);
+  border: 1px solid red;
   color: var(--error);
   border-radius: 4px;
   margin: 20px 0;
+  font-size: 13px;
+}
+input.error {
+  border: 1px solid red;
 }
 
 form{

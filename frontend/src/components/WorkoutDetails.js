@@ -16,7 +16,7 @@ const WorkoutDetails = ({workout}) => {
             <p><strong>Load: </strong>{workout.load}</p>
             <p><strong>Reps: </strong>{workout.reps}</p>
             <p style={{fontSize: "10px", marginTop: "8px"}}>Created on {(workout.createdAt).slice(0,10)} at {(workout.createdAt).slice(11,19)}</p>
-            <span onClick={handleClick}>delete</span>
+            <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
         </div>
     )
 }
